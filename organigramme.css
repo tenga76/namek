@@ -1,0 +1,73 @@
+body {
+    background: #041a00;
+    color: #b6e7a7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #a0d471;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px #002500;
+    user-select: none;
+  }
+  
+  .org-chart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .level-1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .level-2 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .role-card {
+    background: #1f3d0f;
+    border: 2px solid #4caf50;
+    border-radius: 15px;
+    padding: 1.3rem 2rem;
+    width: 180px;
+    box-shadow: 0 0 15px #74c476;
+    user-select: none;
+    font-weight: 700;
+    color: #d4f494;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid #4caf50;
+    margin: 0 auto;
+  }
+  
+  .back-home {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 0.6rem 1.3rem;
+    background: #4caf50;
+    color: #103100;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+  }
+  .back-home:hover {
+    background: #a1cc6a;
+  }
+  

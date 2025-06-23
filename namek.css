@@ -1,0 +1,219 @@
+/* Reset & Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #041a00;
+    color: #b6e7a7;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Bande image en haut sous forme de div pour fixité */
+  #flag {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .banner-image {
+    background: url('https://static.wikia.nocookie.net/dragonball/images/0/08/Namek_landscape.jpg/revision/latest?cb=20150401173404&path-prefix=fr') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    filter: brightness(0.5);
+    z-index: 0;
+  }
+  #flag h1 {
+    position: relative;
+    color: #a0d471;
+    font-size: 2.8rem;
+    font-weight: 900;
+    padding-top: 50px;
+    text-shadow: 2px 2px 5px #002500;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  /* Nav */
+  nav {
+    background: #023100;
+    padding: 1rem 0;
+    box-shadow: inset 0 -3px 5px #004800;
+  }
+  nav a {
+    margin: 0 1.3rem;
+    color: #b6e7a7;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #d7f39d;
+  }
+  
+  /* Main container */
+  main {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: rgba(0, 50, 0, 0.8);
+    border-radius: 14px;
+    box-shadow: 0 0 30px #144214;
+  }
+  
+  /* Sections */
+  section {
+    padding: 1.8rem 2rem;
+    border-bottom: 2px solid #2e7d32;
+    text-align: left;
+    color: #d4e8b0;
+  }
+  section:last-child {
+    border-bottom: none;
+  }
+  
+  /* Titres */
+  h2 {
+    color: #a8d08d;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Texte important mission */
+  .important {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d4f494;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Image doyen */
+  #doyen img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    border: 5px solid #a1cc6a;
+    box-shadow: 0 0 15px #7aad4c;
+  }
+  
+  /* Tableau avantages */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  th,
+  td {
+    border: 1px solid #336633;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  th {
+    background: #4caf50;
+    color: #103100;
+  }
+  
+  /* Galerie avatars */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .avatar img {
+    border: 3px solid #7ac142;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .avatar img:hover {
+    transform: scale(1.1);
+  }
+  .avatar button {
+    margin-top: 0.5rem;
+    background: #7ac142;
+    border: none;
+    color: #103100;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s ease;
+  }
+  .avatar button:hover {
+    background: #a1cc6a;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  input {
+    padding: 0.8rem 1rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    background: #103100;
+    color: #cfeecf;
+  }
+  input::placeholder {
+    color: #9ccf9c;
+  }
+  button[type='submit'] {
+    width: 60%;
+    max-width: 220px;
+    background: #8bc34a;
+    color: #103100;
+    font-weight: 900;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button[type='submit']:hover {
+    background: #aed581;
+  }
+  
+  /* Message de remerciement */
+  #thanksMsg {
+    margin-top: 1rem;
+    color: #c0e68c;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background: #022200;
+    padding: 1.2rem 0;
+    font-size: 0.9rem;
+    color: #9ccf9c;
+    user-select: none;
+    text-align: center;
+  }
+  .bandeau {
+    width: 100%;
+    height: 150px; /* Hauteur du bandeau */
+    background-image: url('https://static.wikia.nocookie.net/dragonball/images/0/08/Namek_landscape.jpg');
+    background-size: cover; /* L'image couvre tout le bandeau */
+    background-position: center; /* Centrer l'image */
+    display: flex;
+    align-items: center; /* Centrer verticalement le texte */
+    justify-content: center; /* Centrer horizontalement le texte */
+    color: #b6e7a7; /* Couleur du texte (vert clair) */
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #002500; /* Un peu d’ombre sur le texte */
+  }
+    
